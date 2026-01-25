@@ -1,0 +1,1 @@
+ddfe7341fd810f749fc7cf525154201811709f7ed0356e20d57810c2addda8b7  bpm_vm_contract.wasm
