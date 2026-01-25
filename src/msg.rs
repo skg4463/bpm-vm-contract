@@ -12,8 +12,8 @@ pub struct InstantiateMsg {
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
 pub enum ExecuteMsg {
-    // 프로세스 엔진을 한 단계 전진시킴
+    // 다음 단계로 전진
     MoveNext { instance_id: String },
-    // 논문의 핵심: 코드 수정 없이 프로세스 정의만 트랜잭션으로 업데이트
+    // 프로세스 설계도 동적 업데이트 (유연성 실험 핵심)
     UpdateProcess { new_tasks: Vec<Task> },
 }
